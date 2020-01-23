@@ -12,11 +12,24 @@ J = 0;
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
+theta0 = theta(1);
+theta1 = theta(2);
+loopCount = rows(X);
+i = 1;
+total = 0;
 
+while(i < loopCount+1)
+  xVal = X(i,[2]);
+  yVal = y(i);
+  temp = ((theta0 + (theta1*xVal)) - yVal)^2;
+  total = total + temp;
+  i = i + 1;
+endwhile
 
-
-
-
+J = total/(2*m); 
+disp("Inital cost is :"); 
+disp(J);
+return;
 % =========================================================================
 
 end
