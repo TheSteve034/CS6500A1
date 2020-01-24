@@ -27,8 +27,8 @@ while(i < loopCount+1)
 endwhile
 
 J = total/(2*m); 
-disp("Inital cost is :"); 
-disp(J);
+%disp("Inital cost is :"); 
+%disp(J);
 return;
 % =========================================================================
 
